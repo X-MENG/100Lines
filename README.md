@@ -10,11 +10,11 @@ Python有很多缺点，但毫无疑问它是一种非常先进的语言，所�
 
 清单：
 
-1，8queens.py 求解八皇后问题
+1，8queens.py  求解八皇后问题
 
-2，calc24.py  凑24点游戏的自动求解
+2，calc24.py   凑24点游戏的自动求解
 
-3, 5x5.py     基于micro:bit的5x5 puzzle
+3，5x5.py      基于micro:bit的5x5 puzzle
 
-4，maze.py    基于micro:bit的Q-Learning迷宫寻路
+4，maze.py     基于micro:bit的Q-Learning迷宫寻路
 
