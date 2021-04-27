@@ -18,5 +18,5 @@ Python有很多缺点，但毫无疑问它是一种非常先进的语言，所�
 
 4，maze.py     基于micro:bit的Q-Learning迷宫寻路
 
-5，balance.py  在micro:bit的点镇上利用水平仪控制精灵捉妖怪的小游戏
+5，balance.py  在micro:bit的点阵上利用水平仪控制精灵捉妖怪的小游戏
 
