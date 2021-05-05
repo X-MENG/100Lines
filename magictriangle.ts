@@ -1,3 +1,4 @@
+
 class Point {
     x:number
     y:number
@@ -41,9 +42,21 @@ game.onUpdate(function () {
     }
 });
 
+function delPoints() {
+    let iter = 0
+    if(ptLst.length == 3) {
+        return
+    }
+
+    while(iter < ptLst.length) {
+        ptLst.removeAt(iter + 1)
+        ptLst.removeAt(iter + 1)
+        ptLst.removeAt(iter + 1)
+        ++iter
+    }
+}
+
 function addPoints() {
-    let start = 0
-    let end = ptLst.length - 1
     let iter = 0
     while(iter < ptLst.length) {
         let f:Point
@@ -58,19 +71,22 @@ function addPoints() {
         let p1 = f.mul(2 / 3).add(t.mul(1 / 3))
         let p2 = f.mul(1 / 3).add(t.mul(2 / 3))
         let mid = f.mul(1 / 2).add(t.mul(1 / 2))
-        ++iter
-        ptLst.insertAt(iter, p1)
+        ptLst.insertAt(++iter, p1)
         let dir = t.sub(f).normalize()
         let ndir = new Point(dir.y, -dir.x)
         let d = f.dist(t)
         let np = mid.add(ndir.mul(d / 3 / 2 * 1.732))
-        ++iter
-        ptLst.insertAt(iter, np)
-        ++iter
-        ptLst.insertAt(iter, p2)
+        ptLst.insertAt(++iter, np)
+        ptLst.insertAt(++iter, p2)
         ++iter
     }
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, () => {
+    color = randint(0, 14)
     addPoints()
+});
+
+controller.B.onEvent(ControllerButtonEvent.Pressed, () => {
+    color = randint(0, 14)
+    delPoints()
 });
