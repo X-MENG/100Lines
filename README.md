@@ -24,4 +24,4 @@
 
 7，colorlerp.py 演示颜色的变化过程输入起始颜色和结束颜色，会把变化过程显示出来
 
-8，magictriangle.ts arcade.makecode上运行的Koch雪花
+8，magictriangle.ts 可以在arcade.makecode上运行的Koch雪花
