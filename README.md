@@ -20,6 +20,8 @@
 
 5，balance.py  在micro:bit的点阵上利用水平仪控制精灵捉妖怪的小游戏
 
-6，magiclinests 可以在arcade.makecode上运行的变换线
+6，magiclines.ts 可以在arcade.makecode上运行的变换线
 
 7，colorlerp.py 演示颜色的变化过程输入起始颜色和结束颜色，会把变化过程显示出来
+
+8，magictriangle.ts arcade.makecode上运行的Koch雪花
