@@ -8,8 +8,8 @@ BACK_COLOR = (0, 0, 0)
 rcH = 240
 rcW = 5
 
-SRC_COLOR = (200, 0, 100)
-DEST_COLOR = (10, 100, 200)
+SRC_COLOR = (255, 0, 255)
+DEST_COLOR = (0, 0, 0)
 
 class MyRect:
     def __init__(self, x, y, clr):
